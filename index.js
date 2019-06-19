@@ -11,6 +11,10 @@ tClient.get('account/verify_credentials', { skip_status: true })
     // console.log('data', result.data);
   })
 
+  tClient.get(`https://api.twitter.com/1.1/trends/place.json?id=455827`).then(result=>{
+    console.log(result.data[0].trends);
+  });
+
   const stream = tClient.stream('statuses/filter', { track: '#RatoMoroTaMelindrado', language: 'pt' })
  
   stream.on('tweet', function (tweet) {
