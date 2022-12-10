@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/github.com/wakeupmh#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "multilang-sentiment": "^1.2.0",
     "twit": "^2.2.11"
   }
